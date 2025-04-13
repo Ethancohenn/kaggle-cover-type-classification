@@ -3,6 +3,7 @@ from xgboost import XGBClassifier
 from lightgbm import LGBMClassifier
 from catboost import CatBoostClassifier
 from sklearn.preprocessing import LabelEncoder
+import numpy as np
 
 def train_random_forest(X_train, y_train):
     model = RandomForestClassifier(
@@ -19,13 +20,15 @@ def train_random_forest(X_train, y_train):
 def train_xgboost(X_train, y_train):
     label_encoder = LabelEncoder()
     y_train_encoded = label_encoder.fit_transform(y_train)
+    n_classes = len(np.unique(y_train_encoded))
     model = XGBClassifier(
         eval_metric="mlogloss",
         n_estimators=150,
         random_state=42, 
-        num_class=8
+        num_class=n_classes
     )
     model.fit(X_train, y_train_encoded)
+    model.label_encoder = label_encoder
     return model
 
 
@@ -37,7 +40,7 @@ def train_histogram_gb(X_train, y_train):
         random_state=42
     )
     model.fit(X_train, y_train_encoded)
-    return model
+    return model, label_encoder
 
 
 def train_lightgbm(X_train, y_train):
