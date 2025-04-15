@@ -70,3 +70,5 @@ jupyter notebook
 
 This project provided valuable insights into various machine learning methods, emphasizing the importance of meticulous hyperparameter tuning and model selection.
 
+**Note**: Some parts of the analysis, such as neural networks, were explored in the final report (PDF) but are not included in this code repository.
+
