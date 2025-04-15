@@ -53,8 +53,8 @@ The best-performing model achieved an accuracy of **0.84241** using **Histogram 
 
 Clone the repository:
 ```bash
-git clone [REPO_URL]
-cd [REPO_NAME]
+git clone https://github.com/Ethancohenn/kaggle-cover-type-classification.git
+cd kaggle-cover-type-classification
 ```
 
 Install dependencies:
