@@ -13,7 +13,7 @@ The project's goal was to classify forest cover types based on geographical and 
 ### Dataset
 
 The dataset is sourced from the Kaggle competition:
-- [Forest Cover Type Prediction - Kaggle](https://www.kaggle.com/competitions/forest-3-a-2024/data)
+- [Forest Cover Type Prediction - Kaggle](https://www.kaggle.com/competitions/forest-3-a-2024)
 
 The provided data included:
 - `train.csv`: Training data with 55 features
