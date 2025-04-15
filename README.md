@@ -13,7 +13,7 @@ The project's goal was to classify forest cover types based on geographical and 
 ### Dataset
 
 The dataset is sourced from the Kaggle competition:
-- [Forest Cover Type Prediction - Kaggle](https://www.kaggle.com/competitions/forest-3-a-2024/data)
+- [Forest Cover Type Prediction - Kaggle](https://www.kaggle.com/competitions/forest-3-a-2024)
 
 The provided data included:
 - `train.csv`: Training data with 55 features
@@ -53,8 +53,8 @@ The best-performing model achieved an accuracy of **0.84241** using **Histogram 
 
 Clone the repository:
 ```bash
-git clone [REPO_URL]
-cd [REPO_NAME]
+git clone https://github.com/Ethancohenn/kaggle-cover-type-classification.git
+cd kaggle-cover-type-classification
 ```
 
 Install dependencies:
@@ -69,4 +69,6 @@ jupyter notebook
 ---
 
 This project provided valuable insights into various machine learning methods, emphasizing the importance of meticulous hyperparameter tuning and model selection.
+
+**Note**: Some parts of the analysis, such as neural networks, were explored in the final report ([Cover Type Classification Final Report.pdf](report/Cover%20Type%20Classification%20Final%20Report.pdf)) but are not included in this code repository.
 
