@@ -4,8 +4,6 @@
 
 This repository contains the implementation and detailed analysis performed for the Kaggle challenge **"Forest Cover Type Prediction"**, carried out as part of the course **APM-51053-EP - Foundations of Machine Learning**.
 
-**Contributors**: Ethan Cohen, Arthur Iffenecker, Tanguy Azema, Jules Cognon
-
 ### Objective
 
 The project's goal was to classify forest cover types based on geographical and environmental data. The dataset contained 55 diverse features, including numeric (elevation, slope) and binary categorical variables (soil type, wilderness area).
